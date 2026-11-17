@@ -45,7 +45,7 @@ class ObjectTracker:
         ).reshape(-1, 1, 2)
         self.previous_box = None
         self.previous_gray = None
-lfdfq
+
     def locate(self, frame_bgr):
         gray = cv2.cvtColor(frame_bgr, cv2.COLOR_BGR2GRAY)
         box = self._match_sift(gray)
